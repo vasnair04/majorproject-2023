@@ -16,6 +16,7 @@ class Player {
         // set_ and get_ functions get and set certain values within the class
         void set_speed(int speedSet);
         void set_numTargets(int targetSet);
+        void set_score(int scor);
         int get_speed();
         int get_numTargets();
         int get_score();

@@ -4,7 +4,7 @@ Target::Target(){
 
 }
 
-void Target::hit(){
+void Target::hit(Player p1){
 
 }
 

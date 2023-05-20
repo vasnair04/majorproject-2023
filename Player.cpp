@@ -20,6 +20,10 @@ void Player::set_numTargets(int targetSet){
     numTargets = targetSet;
 }
 
+void Player::set_score(int scor){
+    score = scor;
+}
+
 int Player::get_speed(){
     return speed;
 }
