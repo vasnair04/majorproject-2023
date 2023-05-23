@@ -1,13 +1,7 @@
 #include "Target.h"
 
+// target initialiser is empty as it is abstract
 Target::Target(){
 
 }
 
-void Target::hit(Player p1){
-
-}
-
-void Target::despawn(){
-
-}

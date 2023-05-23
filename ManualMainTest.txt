@@ -1,0 +1,41 @@
+-TEST FOR BASIC INPUT-
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       10         10                 10
+speed          1          1                 1
+difficulty   1,EASY      1,EASY            1,EASY
+
+-TEST FOR MALICIOUS INPUT-
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       -10       refused            Asked
+speed          ds         to                 For
+difficulty    sdds        run           valid input
+
+-TEST FOR LARGE INPUT-
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       100         100             ~100
+speed          1          1                 1
+difficulty   1,EASY      1,EASY          1,EASY
+
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       10         10                10
+speed         100        100               ~100
+difficulty    1,EASY     1,EASY          1, EASY
+
+-TEST FOR FRACTIONAL INPUT~
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       0.1       refused         asked for valid input
+speed          0.1         to           ran with speed of 0.1
+difficulty   3, HARD     run              3,HARD
+
+-TEST FOR DIFFICULTY BEHAVIORS-
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       10         10                10
+speed         10         10                10
+difficulty   2,MEDIUM   2,MEDIUM       2,MEDIUM 
+note: Behaved as intentended for mediunm difficulty 
+
+            INPUT   EXPECTEDOUTPUT   ACTUALOUTPUT   
+targets       10         10               10
+speed         10         10               10
+difficulty   3,HARD    3,HARD           3,HARD
+note: Behaved as intentended for hard difficulty 
